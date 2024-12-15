@@ -1,0 +1,19 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.number{
+    transform: rotate(calc(30deg * var(--n)));
+    position: absolute;
+    text-align: center;
+    inset: 10px;
+    font-size: 2rem;
+}
+
+.number b {
+    transform: rotate(calc(-30deg * var(--n)));
+    display: inline-block;
+}

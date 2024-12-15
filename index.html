@@ -6,9 +6,32 @@
     <title>Analog Clock</title>
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
-    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div id="wrapper" class="h-screen w-screen flex justify-center items-center">
+        <div class="clock border-red-600 relative min-w-[280px] min-h-[280px] bg-[lightgray] rounded-[50%] flex justify-center items-center">
+            <div class="number" style="--n:1"><b>1</b></div>
+            <div class="number" style="--n:2"><b>2</b></div>
+            <div class="number" style="--n:3"><b>3</b></div>
+            <div class="number" style="--n:4"><b>4</b></div>
+            <div class="number" style="--n:5"><b>5</b></div>
+            <div class="number" style="--n:6"><b>6</b></div>
+            <div class="number" style="--n:7"><b>7</b></div>
+            <div class="number" style="--n:8"><b>8</b></div>
+            <div class="number" style="--n:9"><b>9</b></div>
+            <div class="number" style="--n:10"><b>10</b></div>
+            <div class="number" style="--n:11"><b>11</b></div>
+            <div class="number" style="--n:12"><b>12</b></div>
+            <div class="hour-hand w-[7px] h-[20%] rounded bg-black absolute bottom-[50%] left"></div>
+            <div class="minute-hand w-[5px] h-[25%] rounded bg-white absolute bottom-[50%] left"></div>
+            <div class="second-hand w-[3px] h-[30%] rounded bg-[red] absolute bottom-[50%] left"></div>
+            <div class="center-dot w-5 h-5 absolute bg-[gray] rounded-[50%] "></div>
+        </div>
+
+    </div>
+
+
+    <script src="app.js"></script>
 </body>
 </html>
