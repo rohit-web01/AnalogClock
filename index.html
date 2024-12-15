@@ -7,10 +7,11 @@
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
 </head>
 <body>
-    <div id="wrapper" class="h-screen w-screen flex justify-center items-center">
-        <div class="clock border-red-600 relative min-w-[280px] min-h-[280px] bg-[lightgray] rounded-[50%] flex justify-center items-center">
+    <div id="wrapper" class="relative h-screen w-screen flex flex-col justify-center items-center">
+        <div class="clock relative min-w-[280px] min-h-[280px] rounded-[50%] flex justify-center items-center">
             <div class="number" style="--n:1"><b>1</b></div>
             <div class="number" style="--n:2"><b>2</b></div>
             <div class="number" style="--n:3"><b>3</b></div>
@@ -23,14 +24,16 @@
             <div class="number" style="--n:10"><b>10</b></div>
             <div class="number" style="--n:11"><b>11</b></div>
             <div class="number" style="--n:12"><b>12</b></div>
-            <div class="hour-hand w-[7px] h-[20%] rounded bg-black absolute bottom-[50%] left"></div>
-            <div class="minute-hand w-[5px] h-[25%] rounded bg-white absolute bottom-[50%] left"></div>
-            <div class="second-hand w-[3px] h-[30%] rounded bg-[red] absolute bottom-[50%] left"></div>
+            <div class="hour-hand origin-bottom w-[8px] h-[20%] rounded-sm bg-black absolute bottom-[50%] left"></div>
+            <div class="minute-hand origin-bottom w-[6px] h-[25%] rounded bg-blue-700 absolute bottom-[50%] left"></div>
+            <div class="second-hand origin-bottom w-[4px] h-[30%] rounded bg-[red] absolute bottom-[50%] left"></div>
             <div class="center-dot w-5 h-5 absolute bg-[gray] rounded-[50%] "></div>
         </div>
-
+        <div class="digital-time mt-3 text-xl font-mono text-white  p-2 rounded absolute bottom-[27%]"></div>
+        <footer class="absolute bottom-0 bg-black text-white p-1 w-screen text-center">
+            <p>Made With &hearts; By @rohit-web</p>
+        </footer>
     </div>
-
 
     <script src="app.js"></script>
 </body>

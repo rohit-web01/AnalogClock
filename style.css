@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+#wrapper{
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+}
+
 .number{
     transform: rotate(calc(30deg * var(--n)));
     position: absolute;
@@ -16,4 +22,12 @@
 .number b {
     transform: rotate(calc(-30deg * var(--n)));
     display: inline-block;
+}
+
+.clock{
+    color: white;
+    background: radial-gradient(circle, #05263c, #001830);
+    box-shadow: 0 0 15px 15px  rgba(0,0,0,0.2);
+    border: 7px double;
+    transition: border 1s ease;
 }
